@@ -1,0 +1,190 @@
+[
+  {
+    "id": "001",
+    "title": "Getting Started with React: A Beginner's Guide",
+    "subtitle": "Everything you need to know to build your first React app",
+    "author": "Shiva Raj Paudel",
+    "date": "March 20, 2025",
+    "category": "React",
+    "readTime": "8 min read",
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80",
+    "excerpt": "React is one of the most popular JavaScript libraries for building user interfaces. In this guide, we'll walk through the fundamental concepts and get you up and running with your first React application.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "React is a JavaScript library developed by Facebook (now Meta) for building fast, interactive user interfaces. It uses a component-based architecture, which means your UI is broken into small, reusable pieces called components."
+      },
+      {
+        "type": "heading",
+        "text": "Why React?"
+      },
+      {
+        "type": "paragraph",
+        "text": "React's virtual DOM makes updates incredibly fast. Instead of manipulating the real DOM directly, React creates a lightweight copy and only updates what has actually changed. This approach results in smoother, more performant applications."
+      },
+      {
+        "type": "heading",
+        "text": "Setting Up Your First Project"
+      },
+      {
+        "type": "paragraph",
+        "text": "The easiest way to get started is using Create React App or Vite. Both tools set up a complete development environment with a single command. Vite is generally preferred for new projects due to its incredible speed."
+      },
+      {
+        "type": "code",
+        "language": "bash",
+        "text": "npm create vite@latest my-app --template react\ncd my-app\nnpm install\nnpm run dev"
+      },
+      {
+        "type": "heading",
+        "text": "Understanding Components"
+      },
+      {
+        "type": "paragraph",
+        "text": "Components are the building blocks of a React application. A component is essentially a JavaScript function that returns JSX — a syntax that looks like HTML but is actually JavaScript. Here's a simple example:"
+      },
+      {
+        "type": "code",
+        "language": "jsx",
+        "text": "function Greeting({ name }) {\n  return (\n    <div className=\"greeting\">\n      <h1>Hello, {name}!</h1>\n      <p>Welcome to React.</p>\n    </div>\n  );\n}\n\nexport default Greeting;"
+      },
+      {
+        "type": "heading",
+        "text": "State and Props"
+      },
+      {
+        "type": "paragraph",
+        "text": "Props are how components receive data from their parents, while state is local data managed within a component. When state changes, React re-renders only the affected components, keeping your app fast and efficient."
+      },
+      {
+        "type": "paragraph",
+        "text": "The useState hook is your primary tool for managing state in functional components. It returns a current value and a setter function that triggers a re-render when called."
+      },
+      {
+        "type": "heading",
+        "text": "Next Steps"
+      },
+      {
+        "type": "paragraph",
+        "text": "Once you're comfortable with components, state, and props, explore React Router for navigation and consider state management solutions like Zustand or Redux Toolkit for larger apps. The React ecosystem is vast and exciting — enjoy the journey!"
+      }
+    ],
+    "tags": ["React", "JavaScript", "Frontend", "Web Development"]
+  },
+  {
+    "id": "002",
+    "title": "Mastering CSS Grid: Build Complex Layouts with Ease",
+    "subtitle": "A deep dive into CSS Grid and how it transforms layout design",
+    "author": "Shiva Raj Paudel",
+    "date": "March 10, 2025",
+    "category": "CSS",
+    "readTime": "6 min read",
+    "thumbnail": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&q=80",
+    "excerpt": "CSS Grid is the most powerful layout system available in CSS. Unlike Flexbox which is one-dimensional, Grid lets you control both rows and columns simultaneously — perfect for complex, magazine-style layouts.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "CSS Grid has fundamentally changed how we approach web layouts. Before Grid, developers relied on floats, tables, and later Flexbox to create complex layouts — each with its own set of hacks and workarounds."
+      },
+      {
+        "type": "heading",
+        "text": "Grid vs Flexbox"
+      },
+      {
+        "type": "paragraph",
+        "text": "Flexbox excels at laying out items along a single axis — either a row or a column. Grid, on the other hand, gives you control over both axes simultaneously. Use Flexbox for components and small-scale layouts; use Grid for page-level layouts and complex arrangements."
+      },
+      {
+        "type": "heading",
+        "text": "Defining a Grid"
+      },
+      {
+        "type": "paragraph",
+        "text": "Creating a grid is as simple as setting display: grid on a container element. From there, you define rows and columns using grid-template-columns and grid-template-rows."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "text": ".container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: auto;\n  gap: 20px;\n}"
+      },
+      {
+        "type": "heading",
+        "text": "The fr Unit"
+      },
+      {
+        "type": "paragraph",
+        "text": "The fr unit represents a fraction of the available space. 1fr 1fr 1fr creates three equal columns, while 2fr 1fr creates two columns where the first is twice the width of the second. It's incredibly intuitive once you get the hang of it."
+      },
+      {
+        "type": "heading",
+        "text": "Placing Items Explicitly"
+      },
+      {
+        "type": "paragraph",
+        "text": "One of Grid's superpowers is explicit item placement. You can tell an element exactly where to sit in the grid using grid-column and grid-row properties, enabling true magazine-style layouts without any JavaScript."
+      },
+      {
+        "type": "code",
+        "language": "css",
+        "text": ".hero-item {\n  grid-column: 1 / 3; /* spans columns 1 to 3 */\n  grid-row: 1 / 2;\n}"
+      }
+    ],
+    "tags": ["CSS", "Grid", "Layout", "Frontend"]
+  },
+  {
+    "id": "003",
+    "title": "TypeScript for JavaScript Developers",
+    "subtitle": "Why adding types to your JavaScript makes your code bulletproof",
+    "author": "Shiva Raj Paudel",
+    "date": "February 28, 2025",
+    "category": "TypeScript",
+    "readTime": "7 min read",
+    "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80",
+    "excerpt": "TypeScript is a strongly typed superset of JavaScript that compiles to plain JavaScript. It adds optional static typing, classes, and interfaces, catching errors at compile time rather than runtime.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "If you've ever spent hours debugging a runtime error only to find it was a simple type mismatch, TypeScript is for you. It brings the safety of static typing to the flexible world of JavaScript."
+      },
+      {
+        "type": "heading",
+        "text": "The Core Benefits"
+      },
+      {
+        "type": "paragraph",
+        "text": "TypeScript catches errors before your code runs. Your editor understands your code better, providing intelligent autocomplete and inline documentation. Refactoring becomes safer because the compiler tells you everywhere something breaks."
+      },
+      {
+        "type": "heading",
+        "text": "Basic Types"
+      },
+      {
+        "type": "code",
+        "language": "typescript",
+        "text": "let name: string = 'Shiva';\nlet age: number = 25;\nlet isDeveloper: boolean = true;\nlet skills: string[] = ['React', 'TypeScript', 'CSS'];"
+      },
+      {
+        "type": "heading",
+        "text": "Interfaces and Types"
+      },
+      {
+        "type": "paragraph",
+        "text": "Interfaces let you define the shape of objects. This is where TypeScript really shines — you can describe exactly what data your functions expect and return, making your APIs self-documenting."
+      },
+      {
+        "type": "code",
+        "language": "typescript",
+        "text": "interface BlogPost {\n  id: string;\n  title: string;\n  author: string;\n  date: string;\n  tags: string[];\n}\n\nfunction renderPost(post: BlogPost): string {\n  return `<h1>${post.title}</h1>`;\n}"
+      },
+      {
+        "type": "heading",
+        "text": "Getting Started"
+      },
+      {
+        "type": "paragraph",
+        "text": "Adding TypeScript to an existing project is straightforward. Install it, generate a tsconfig.json, and start renaming files from .js to .ts. You don't have to type everything at once — TypeScript's gradual adoption path is one of its greatest strengths."
+      }
+    ],
+    "tags": ["TypeScript", "JavaScript", "Programming", "Web Development"]
+  }
+]
