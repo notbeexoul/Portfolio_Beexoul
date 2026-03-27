@@ -69,7 +69,12 @@
         "text": "Once you're comfortable with components, state, and props, explore React Router for navigation and consider state management solutions like Zustand or Redux Toolkit for larger apps. The React ecosystem is vast and exciting — enjoy the journey!"
       }
     ],
-    "tags": ["React", "JavaScript", "Frontend", "Web Development"]
+    "tags": [
+      "React",
+      "JavaScript",
+      "Frontend",
+      "Web Development"
+    ]
   },
   {
     "id": "002",
@@ -129,7 +134,12 @@
         "text": ".hero-item {\n  grid-column: 1 / 3; /* spans columns 1 to 3 */\n  grid-row: 1 / 2;\n}"
       }
     ],
-    "tags": ["CSS", "Grid", "Layout", "Frontend"]
+    "tags": [
+      "CSS",
+      "Grid",
+      "Layout",
+      "Frontend"
+    ]
   },
   {
     "id": "003",
@@ -185,6 +195,11 @@
         "text": "Adding TypeScript to an existing project is straightforward. Install it, generate a tsconfig.json, and start renaming files from .js to .ts. You don't have to type everything at once — TypeScript's gradual adoption path is one of its greatest strengths."
       }
     ],
-    "tags": ["TypeScript", "JavaScript", "Programming", "Web Development"]
+    "tags": [
+      "TypeScript",
+      "JavaScript",
+      "Programming",
+      "Web Development"
+    ]
   }
 ]
